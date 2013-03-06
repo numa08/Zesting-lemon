@@ -1,0 +1,8 @@
+# Windows files
+Thumbs.db
+
+# Mac OS files
+.DS_Store
+
+# Cygwin files
+*.stackdump
