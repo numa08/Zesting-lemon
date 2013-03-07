@@ -1,5 +1,7 @@
 package jp.numa08.zestinglemon.tool;
 
+import java.io.Serializable;
+
 import android.content.Context;
 import android.content.Intent;
 
@@ -11,7 +13,7 @@ import android.content.Intent;
  * @author numa08
  * 
  */
-public interface Tool {
+public interface Tool extends Serializable {
 	/**
 	 * 通知バーに表示するタイプのアプリかどうかを判断します。<br>
 	 * 通知バーに表示されたアプリは、直ちに起動をするのではなく、<br>
@@ -28,4 +30,25 @@ public interface Tool {
 	 * @return
 	 */
 	public Intent createIntent(final Context context);
+
+	/**
+	 * タイトル
+	 * 
+	 * @return
+	 */
+	public String title();
+
+	/**
+	 * 説明
+	 * 
+	 * @return
+	 */
+	public String description();
+
+	/**
+	 * 画像
+	 * 
+	 * @return
+	 */
+	public int imageId();
 }
