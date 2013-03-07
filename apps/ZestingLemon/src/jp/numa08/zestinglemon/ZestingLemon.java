@@ -1,10 +1,13 @@
 package jp.numa08.zestinglemon;
 
+import jp.numa08.zestinglemon.abs.AbsBaseActivity;
+import jp.numa08.zestinglemon.tool.OnToolSelectedListener;
+import jp.numa08.zestinglemon.tool.Tool;
 import android.os.Bundle;
-import android.app.Activity;
 import android.view.Menu;
 
-public class ZestingLemon extends Activity {
+public class ZestingLemon extends AbsBaseActivity implements
+		OnToolSelectedListener {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -14,9 +17,10 @@ public class ZestingLemon extends Activity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.zesting_lemon, menu);
 		return true;
 	}
 
+	@Override
+	public void onToolSelected(Tool tool) {}
 }
