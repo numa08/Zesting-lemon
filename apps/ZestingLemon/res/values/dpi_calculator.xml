@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="function_button">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/dpicalculator_button</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:shadowColor">#01000000</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+    </style>
+    <string name="hdpi_button">hdpi</string>
+</resources>
