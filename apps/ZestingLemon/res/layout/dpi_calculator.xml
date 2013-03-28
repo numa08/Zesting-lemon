@@ -21,6 +21,8 @@
            android:orientation="horizontal"
            >
                <RadioButton 
+                   android:id="@+id/pixel_button"
+                   android:text="@string/pixel_button"
                    android:layout_width="0dip"
                    android:layout_height="match_parent"
                    android:layout_weight="1"
@@ -33,6 +35,8 @@
                    android:layout_weight="1"
                    />
                <RadioButton 
+                   android:id="@+id/ldpi_button"
+                   android:text="@string/ldpi_button"
                    android:layout_width="0dip"
                    android:layout_height="match_parent"
                    android:layout_weight="1"
@@ -40,14 +44,17 @@
                    android:layout_marginRight="10dp"
                    />
                <RadioButton 
-                   android:layout_width="0dip"
-                   android:layout_height="match_parent"
-                   android:layout_weight="1"
-                   style="@style/function_button"
-                   android:layout_marginRight="10dp"
+                   android:id="@+id/hdpi_button"
                    android:text="@string/hdpi_button"
+                   android:layout_width="0dip"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   style="@style/function_button"
+                   android:layout_marginRight="10dp"
                    />
                <RadioButton 
+                   android:id="@+id/xhdpi_button"
+                   android:text="@string/xhdpi_button"
                    android:layout_width="0dip"
                    android:layout_height="match_parent"
                    android:layout_weight="1"
@@ -64,37 +71,19 @@
                android:layout_width="0dip"
                android:layout_height="match_parent"
                android:layout_weight="1"
+               style="@style/dpicalculator_button"
                />
            <Button 
                android:layout_width="0dip"
                android:layout_height="match_parent"
                android:layout_weight="1"
+               style="@style/dpicalculator_button"
                />
            <Button 
                android:layout_width="0dip"
                android:layout_height="match_parent"
                android:layout_weight="1"
-               />
-       </TableRow>
-       <TableRow 
-           android:layout_width="match_parent"
-           android:layout_height="0dip"
-           android:layout_weight="1"
-           >
-           <Button 
-               android:layout_width="0dip"
-               android:layout_height="match_parent"
-               android:layout_weight="1"
-               />
-           <Button 
-               android:layout_width="0dip"
-               android:layout_height="match_parent"
-               android:layout_weight="1"
-               />
-           <Button 
-               android:layout_width="0dip"
-               android:layout_height="match_parent"
-               android:layout_weight="1"
+               style="@style/dpicalculator_button"
                />
        </TableRow>
        <TableRow 
@@ -106,16 +95,43 @@
                android:layout_width="0dip"
                android:layout_height="match_parent"
                android:layout_weight="1"
+               style="@style/dpicalculator_button"
                />
            <Button 
                android:layout_width="0dip"
                android:layout_height="match_parent"
                android:layout_weight="1"
+               style="@style/dpicalculator_button"
                />
            <Button 
                android:layout_width="0dip"
                android:layout_height="match_parent"
                android:layout_weight="1"
+               style="@style/dpicalculator_button"
+               />
+       </TableRow>
+       <TableRow 
+           android:layout_width="match_parent"
+           android:layout_height="0dip"
+           android:layout_weight="1"
+           >
+           <Button 
+               android:layout_width="0dip"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               style="@style/dpicalculator_button"
+               />
+           <Button 
+               android:layout_width="0dip"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               style="@style/dpicalculator_button"
+               />
+           <Button 
+               android:layout_width="0dip"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               style="@style/dpicalculator_button"
                />
        </TableRow>
    </TableLayout>     
