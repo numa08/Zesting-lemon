@@ -18,8 +18,30 @@
         <item name="android:shadowDy">2.0</item>
         <item name="android:layout_margin">5dp</item>
     </style>
+    <style name="clear_button">
+        <item name="android:background">@drawable/dpicalculator_clear_button</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:shadowColor">#01000000</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
     <string name="pixel_button">pixel</string>
     <string name="hdpi_button">hdpi</string>
     <string name="ldpi_button">ldpi</string>
     <string name="xhdpi_button">xhdpi</string>
+    <string name="digit_0">0</string>
+	<string name="digit_1">1</string>
+	<string name="digit_2">2</string>
+	<string name="digit_3">3</string>
+	<string name="digit_4">4</string>
+	<string name="digit_5">5</string>
+	<string name="digit_6">6</string>
+	<string name="digit_7">7</string>
+	<string name="digit_8">8</string>
+	<string name="digit_9">9</string>
+	<string name="clear">C</string>
+	<string name="digimal">.</string>
 </resources>
