@@ -1,138 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
-   <View 
-       android:layout_width="match_parent"
-       android:layout_height="0dip"
-       android:layout_weight="3"
-       android:background="@null"
-       /> 
-   <TableLayout 
-       android:layout_width="match_parent"
-       android:layout_height="0dip"
-       android:layout_weight="6"
-       >
-       <RadioGroup 
-           android:layout_width="match_parent"
-           android:layout_height="0dip"
-           android:layout_weight="1"
-           android:orientation="horizontal"
-           >
-               <RadioButton 
-                   android:id="@+id/pixel_button"
-                   android:text="@string/pixel_button"
-                   android:layout_width="0dip"
-                   android:layout_height="match_parent"
-                   android:layout_weight="1"
-                   style="@style/function_button"
-                   android:layout_marginLeft="5dp"
-                   />
-               <Space 
-                   android:layout_width="0dip"
-                   android:layout_height="match_parent"
-                   android:layout_weight="1"
-                   />
-               <RadioButton 
-                   android:id="@+id/ldpi_button"
-                   android:text="@string/ldpi_button"
-                   android:layout_width="0dip"
-                   android:layout_height="match_parent"
-                   android:layout_weight="1"
-                   style="@style/function_button"
-                   android:layout_marginRight="10dp"
-                   />
-               <RadioButton 
-                   android:id="@+id/hdpi_button"
-                   android:text="@string/hdpi_button"
-                   android:layout_width="0dip"
-                   android:layout_height="match_parent"
-                   android:layout_weight="1"
-                   style="@style/function_button"
-                   android:layout_marginRight="10dp"
-                   />
-               <RadioButton 
-                   android:id="@+id/xhdpi_button"
-                   android:text="@string/xhdpi_button"
-                   android:layout_width="0dip"
-                   android:layout_height="match_parent"
-                   android:layout_weight="1"
-                   style="@style/function_button"
-                   android:layout_marginRight="5dp"
-                   />
-               </RadioGroup>
-       <TableRow 
-           android:layout_width="match_parent"
-           android:layout_height="0dip"
-           android:layout_weight="1"
-           >
-           <Button 
+    android:layout_height="match_parent" >
+    
+    <LinearLayout 
+        android:id="@+id/fourth_digit_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <Button 
+               android:id="@+id/digit_digimal"
                android:layout_width="0dip"
                android:layout_height="match_parent"
                android:layout_weight="1"
-               style="@style/dpicalculator_button"
+               style="@style/digit_button"
                />
            <Button 
+               android:id="@+id/digit_0"
                android:layout_width="0dip"
                android:layout_height="match_parent"
                android:layout_weight="1"
-               style="@style/dpicalculator_button"
+               style="@style/digit_button"
                />
            <Button 
+               android:id="@+id/digit_clear"
                android:layout_width="0dip"
                android:layout_height="match_parent"
                android:layout_weight="1"
-               style="@style/dpicalculator_button"
+               style="@style/digit_button"
                />
-       </TableRow>
-       <TableRow 
-           android:layout_width="match_parent"
-           android:layout_height="0dip"
-           android:layout_weight="1"
-           >
-           <Button 
-               android:layout_width="0dip"
-               android:layout_height="match_parent"
-               android:layout_weight="1"
-               style="@style/dpicalculator_button"
-               />
-           <Button 
-               android:layout_width="0dip"
-               android:layout_height="match_parent"
-               android:layout_weight="1"
-               style="@style/dpicalculator_button"
-               />
-           <Button 
-               android:layout_width="0dip"
-               android:layout_height="match_parent"
-               android:layout_weight="1"
-               style="@style/dpicalculator_button"
-               />
-       </TableRow>
-       <TableRow 
-           android:layout_width="match_parent"
-           android:layout_height="0dip"
-           android:layout_weight="1"
-           >
-           <Button 
-               android:layout_width="0dip"
-               android:layout_height="match_parent"
-               android:layout_weight="1"
-               style="@style/dpicalculator_button"
-               />
-           <Button 
-               android:layout_width="0dip"
-               android:layout_height="match_parent"
-               android:layout_weight="1"
-               style="@style/dpicalculator_button"
-               />
-           <Button 
-               android:layout_width="0dip"
-               android:layout_height="match_parent"
-               android:layout_weight="1"
-               style="@style/dpicalculator_button"
-               />
-       </TableRow>
-   </TableLayout>     
-</LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/third_digit_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fourth_digit_row" >
+
+        <Button
+            android:id="@+id/digit_1"
+            style="@style/digit_button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/digit_2"
+            style="@style/digit_button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/digit_3"
+            style="@style/digit_button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/second_digit_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/third_digit_row">
+
+        <Button
+            android:id="@+id/digit_4"
+            style="@style/digit_button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/digit_5"
+            style="@style/digit_button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/digit_6"
+            style="@style/digit_button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/top_digit_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/second_digit_row">
+
+        <Button
+            android:id="@+id/digit_7"
+            style="@style/digit_button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/digit_8"
+            style="@style/digit_button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/digit_9"
+            style="@style/digit_button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/function_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/top_digit_row"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/pixel_button"
+            style="@style/function_button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/pixel_button" />
+
+        <Space
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/ldpi_button"
+            style="@style/function_button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="@string/ldpi_button" />
+
+        <RadioButton
+            android:id="@+id/hdpi_button"
+            style="@style/function_button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="@string/hdpi_button" />
+
+        <RadioButton
+            android:id="@+id/xhdpi_button"
+            style="@style/function_button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="@string/xhdpi_button" />
+    </RadioGroup>
+
+</RelativeLayout>

@@ -9,7 +9,7 @@
         <item name="android:shadowDx">2.0</item>
         <item name="android:shadowDy">2.0</item>
     </style>
-    <style name="dpicalculator_button">
+    <style name="digit_button">
         <item name="android:background">@drawable/dpicalculator_button</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">#ffffff</item>
