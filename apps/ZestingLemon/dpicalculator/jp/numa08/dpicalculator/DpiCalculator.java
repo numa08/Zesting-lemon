@@ -26,6 +26,29 @@ public class DpiCalculator extends Activity implements OnClickListener {
 	}
 
 	@Override
-	public void onClick(View v) {}
+	public void onClick(View v) {
+		switch (v.getId()) {
+		case R.id.digit_0:
+			break;
+		case R.id.digit_1:
+			break;
+		case R.id.digit_2:
+			break;
+		case R.id.digit_3:
+			break;
+		case R.id.digit_4:
+			break;
+		case R.id.digit_5:
+			break;
+		case R.id.digit_6:
+			break;
+		case R.id.digit_7:
+			break;
+		case R.id.digit_8:
+			break;
+		case R.id.digit_9:
+			break;
+		}
+	}
 
 }
