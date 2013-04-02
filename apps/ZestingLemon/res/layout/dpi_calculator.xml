@@ -174,16 +174,16 @@
             android:layout_weight="1"
             android:text="@string/xhdpi_button" />
     </RadioGroup>
-    <LinearLayout 
+    
+    <TableLayout 
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_above="@id/function_button"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
         android:background="@drawable/dpicalculator_lc_background"
-        ></LinearLayout>
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        >
+    </TableLayout>
 
 </RelativeLayout>
