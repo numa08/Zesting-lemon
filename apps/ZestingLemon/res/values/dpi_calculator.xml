@@ -27,6 +27,9 @@
         <item name="android:shadowDy">2.0</item>
         <item name="android:layout_margin">5dp</item>
     </style>
+    
+    <style name="lc_text">
+    </style>
 
     <string name="pixel_button">pixel</string>
     <string name="hdpi_button">hdpi</string>
@@ -44,4 +47,6 @@
 	<string name="digit_9">9</string>
 	<string name="clear">C</string>
 	<string name="digimal">.</string>
+	
+	<color name="lc_text_color">#C6C7D5</color>
 </resources>
